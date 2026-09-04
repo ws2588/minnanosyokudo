@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>親子丼</title>
+    <meta name="description" content="子ども食堂">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.svg"> <!-- favicon用のsvg画像を用意しておく(背景透過) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="sub-page-header">
+        <button class="sub-page-header-btn" type="button" aria-label="メニューを開く">
+            <img src="img/logo/logo2.svg" alt="みんなの食堂">
+        </button>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about-page.html">食堂について</a></li>
+                <li><a href="menu-page.html">今週のごはん</a></li>
+                <li><a href="news-page.html">お知らせ</a></li>
+                <li><a href="qa-page.html">よくある質問</a></li>
+                <li><a href="about-page.html#access">アクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <div class="mask"></div>
+
+        <button class="toggle-btn" type="button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="menu-item container">
+            <img src="img/menu/menu/menu3.png" alt="">
+            <div class="menu-item-text">
+                <h1>親子丼</h1>
+                <div class="menu-item-info">
+                    <h2>献立詳細</h2>
+                    <ul>
+                        <li>親子丼</li>
+                        <li>季節のサラダ</li>
+                        <li>とん汁</li>
+                        <li>ミニデザート</li>
+                    </ul>
+                </div>
+                <div class="menu-item-allergy">
+                    <h2>使用している主なアレルゲン</h2>
+                    <p>卵、乳、小麦</p>
+                </div>
+                <a class="menu-item-btn btn" href="menu-page.html#weeks-menu">
+                    <span>メニュー一覧へ</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <a href="#">
+                <img src="img/logo/logo2.svg" alt="みんなの食堂">
+            </a>
+            <a class="page-top" href="#">
+                <span class="font-en">page top</span>
+            </a>
+        </div>
+        <p>©2026 みんなの食堂</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

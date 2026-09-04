@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>みんなの食堂</title>
+    <meta name="description" content="子ども食堂">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.svg"> <!-- favicon用のsvg画像を用意しておく(背景透過) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="logo-pc" src="img/logo/logo1.svg" alt="みんなの食堂">
+            <img class="logo-tb" src="img/logo/logo2.svg" alt="みんなの食堂">
+        </a>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="#">トップページ</a></li>
+                <li><a href="about-page.html">食堂について</a></li>
+                <li><a href="menu-page.html">今週のごはん</a></li>
+                <li><a href="news-page.html">お知らせ</a></li>
+                <li><a href="qa-page.html">よくある質問</a></li>
+                <li><a href="about-page.html#access">アクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <div class="mask"></div>
+
+        <button class="toggle-btn" type="button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <div class="mv">
+            <img src="img/mv.png" alt="メインビジュアル">
+            <h1>おなかも心も<br>満たされる場所</h1>
+        </div>
+
+        <section class="about container fadein" id="about">
+            <div class="about-box">
+                <div class="about-text">
+                    <div class="section-heading">
+                        <h2 class="section-title">食堂について</h2>
+                        <p class="section-title-sub font-en">- About -</p>
+                    </div>
+                    <div class="about-lead">
+                        <p>みんなの食堂は、誰にとっても「いつもの場所」になるような場所を目指しています。
+                            家の外にあるもうひとつのリビングのような場所です。
+                        </p>
+                        <p>ひとりで過ごしてもいい、無理に話さなくてもいい。
+                            でも、誰かがそこにいる安心感。
+                            私たちはそんな「ちょうどいい距離感」を大切にしています。
+                        </p>
+                    </div>
+                    <a class="about-btn btn" href="about-page.html">
+                        <span>詳しく見る</span></a>
+                </div>
+                <div class="about-img">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="menu container fadein" id="menu">
+            <div class="menu-box">
+                <div class="menu-img">
+                    <img src="img/menu.png" alt="">
+                </div>
+                <div class="menu-text">
+                    <div class="section-heading">
+                        <h2 class="section-title">今週のごはん</h2>
+                        <p class="section-title-sub font-en">- This Week’s Menu -</p>
+                    </div>
+                    <div class="menu-lead">
+                        <p>管理栄養士が考えた、体にやさしい週替わりの献立。
+                            毎週旬の食材を取り入れた栄養満点のメニューをご用意しています。
+                        </p>
+                        <p>すべての方に安心してお召し上がりいただけるよう、アレルギー対策にも丁寧に取り組んでいます。
+                            みんなで囲む食卓があたたかい時間になりますように。
+                        </p>
+                    </div>
+                    <a class="menu-btn btn" href="menu-page.html">
+                        <span>一覧を見る</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news container fadein" id="news">
+            <div class="section-heading">
+                <h2 class="section-title">お知らせ</h2>
+                <p class="section-title-sub font-en">- News -</p>
+            </div>
+            <ul class="news-list">
+                <li class="news-list-item">
+                    <a href="news-item1.html"><img src="img/news/news1.png" alt="">
+                        <p>フリースペースの開放について</p>
+                    </a>
+                </li>
+                <li class="news-list-item">
+                    <a href="news-item2.html"><img src="img/news/news2.png" alt="">
+                        <p>今週のメニュー更新</p>
+                    </a>
+                </li>
+                <li class="news-list-item">
+                    <a href="news-item3.html"> <img src="img/news/news3.png" alt="">
+                        <p>休日イベントのお知らせ</p>
+                    </a>
+                </li>
+            </ul>
+            <a class="news-btn btn" href="news-page.html">
+                <span>一覧を見る</span>
+            </a>
+        </section>
+
+        <section class="qa fadein" id="qa">
+            <div class="qa-inner">
+                <div class="section-heading">
+                    <h2 class="section-title">よくある質問</h2>
+                    <p class="section-title-sub font-en">- Q &amp; A -</p>
+                </div>
+                <ul class="qa-list">
+                    <li>
+                        <button type="button" class="qa-question">
+                            Q.利用するのに予約は必要ですか？</button>
+                        <div class="qa-answer">
+                            <p>A.ご予約は必要ありません。初めての方もお気軽にお越しください。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="qa-question">
+                            Q.子どもが一人で行っても大丈夫ですか？</button>
+                        <div class="qa-answer">
+                            <p>A.お子さまだけでの利用も可能です。スタッフが見守りながら対応しています。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="qa-question">
+                            Q.保護者も一緒に利用できますか？</button>
+                        <div class="qa-answer">
+                            <p>A.ご利用いただけます。ぜひ一緒にお越しください。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="qa-question">
+                            Q.アレルギー対応はしていますか？</button>
+                        <div class="qa-answer">
+                            <p>A.アレルギー表示を行っています。詳細は各メニューをご覧ください。</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="qa-btn btn" href="qa-page.html">
+                    <span>一覧を見る</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="access container fadein">
+            <div class="access-box">
+                <div class="access-img">
+                    <img src="img/access.png" alt="">
+                </div>
+                <div class="access-text">
+                    <div class="section-heading">
+                        <h2 class="section-title">アクセス</h2>
+                        <p class="section-title-sub font-en">- Access -</p>
+                    </div>
+                    <div class="access-lead">
+                        <p>
+                            みんなの食堂は、大阪市内に２つの拠点があります。
+                            放課後の利用や地域イベントなど、それぞれ少しづつ異なる過ごし方ができる場所です。
+                        </p>
+                        <p>
+                            アクセスの良い店舗や、その日の過ごし方に合わせてお気軽にご利用ください。
+                        </p>
+                    </div>
+                    <a class="access-btn btn" href="about-page.html#access">
+                        <span>一覧を見る</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact fadein" id="contact">
+            <div class="contact-ticket">
+                <div class="contact-ticket-inner">
+                    <img class="contact-icon" src="img/contact/contact.icon.png" alt="">
+                    <h2 class="contact-title">お問い合わせ</h2>
+                    <div class="contact-ticket-text">
+                        <p>ご質問・ご相談はこちらから</p>
+                        <p>お気軽にご連絡ください。</p>
+                    </div>
+                    <a class="contact-link" href="contact.html">入力フォームへ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <img src="img/logo/logo2.svg" alt="みんなの食堂">
+            <a class="page-top" href="#">
+                <span class="font-en">page top</span>
+            </a>
+        </div>
+        <p>©2026 みんなの食堂</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

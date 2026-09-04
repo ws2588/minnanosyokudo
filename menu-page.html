@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>今週のごはん</title>
+    <meta name="description" content="子ども食堂">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.svg"> <!-- favicon用のsvg画像を用意しておく(背景透過) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="logo-pc" src="img/logo/logo1.svg" alt="みんなの食堂">
+            <img class="logo-tb" src="img/logo/logo2.svg" alt="みんなの食堂">
+        </a>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about-page.html">食堂について</a></li>
+                <li><a href="menu-page.html">今週のごはん</a></li>
+                <li><a href="news-page.html">お知らせ</a></li>
+                <li><a href="qa-page.html">よくある質問</a></li>
+                <li><a href="about-page.html#access">アクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <div class="mask"></div>
+
+        <button class="toggle-btn" type="button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="menu-top page-hero">
+            <img class="menu-top-img1 page-hero-img1" src="img/menu/menu-top.png" alt="">
+            <div class="menu-top-box page-hero-box">
+                <div class="menu-top-box-contents page-hero-box-contents">
+                    <h1 class="page-hero-title">今週のごはん<br><span class="page-hero-subtitle">- This Week’s Menu -</span>
+                    </h1>
+                    <p class="page-hero-lead">新鮮な野菜を使った栄養満点のメニューをご用意しています。<br>
+                        どなたでも安心して召し上がっていただけるよう食物アレルギーに対する取り組みも行っております。<br>
+                        気になる方は事前にスタッフへご相談ください。
+                    </p>
+                </div>
+                <img class="menu-top-img2 page-hero-img2" src="img/menu/menu-top2.png" alt="">
+            </div>
+        </section>
+
+        <section class="weeks-menu container fadein" id="weeks-menu">
+            <div class="section-heading menu-heading">
+                <h2 class="section-title">今週のメニュー</h2>
+                <p class="section-title-sub font-en">- Menu -</p>
+            </div>
+            <ul class="weeks-menu-list">
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item1.html"><img src="img/menu/menu/menu1.png" alt="">
+                        <span>月</span>
+                        <p class="menu-name">ハンバーグプレート</p>
+                    </a>
+                </li>
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item2.html">
+                        <img src="img/menu/menu/menu2.png" alt="">
+                        <span>火</span>
+                        <p class="menu-name">カレーライス</p>
+                    </a>
+                </li>
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item3.html">
+                        <img src="img/menu/menu/menu3.png" alt="">
+                        <span>水</span>
+                        <p class="menu-name">親子丼</p>
+                    </a>
+                </li>
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item4.html">
+                        <img src="img/menu/menu/menu4.png" alt="">
+                        <span>木</span>
+                        <p class="menu-name">鮭のホイル焼きプレート</p>
+                    </a>
+                </li>
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item5.html">
+                        <img src="img/menu/menu/menu5.png" alt="">
+                        <span>金</span>
+                        <p class="menu-name">唐揚げ定食</p>
+                    </a>
+                </li>
+                <li class="weeks-menu-list-item">
+                    <a href="menu-item6.html">
+                        <img src="img/menu/menu/menu6.png" alt="">
+                        <span>土</span>
+                        <p class="menu-name">ハヤシライス</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="allergy fadein">
+            <div class="section-heading menu-heading">
+                <h2 class="section-title">アレルギー対応について</h2>
+                <p class="section-title-sub font-en">- Allergy -</p>
+            </div>
+            <p class="allergy-lead">食物アレルギーに対する以下の取り組みを行なっております。</p>
+            <ul class="allergy-list">
+                <li>
+                    <img src="img/allergy/allergy-icon-r.svg" alt="">
+                    <p>全メニューにおいて、特定原材料７品目（卵、乳、小麦、えび、かに、そば、落花生）の使用状況を表示しています。</p>
+                </li>
+                <li>
+                    <img src="img/allergy/allergy-icon-r.svg" alt="">
+                    <p>調理器具は洗浄しておりますが、同一キッチンで調理を行うため微量の混入（コンタミネーション）の可能性を完全に否定できません。</p>
+                </li>
+                <li>
+                    <img src="img/allergy/allergy-icon-r.svg" alt="">
+                    <p>重度のアレルギーをお持ちの方は事前にスタッフまでご相談ください。持参されたお弁当等を一緒に召し上がることも可能です。</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <a href="#">
+                <img src="img/logo/logo2.svg" alt="みんなの食堂">
+            </a>
+            <a class="page-top" href="#">
+                <span class="font-en">page top</span>
+            </a>
+        </div>
+        <p>©2026 みんなの食堂</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

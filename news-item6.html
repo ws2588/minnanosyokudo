@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>今週のメニュー更新</title>
+    <meta name="description" content="子ども食堂">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.svg"> <!-- favicon用のsvg画像を用意しておく(背景透過) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="sub-page-header">
+        <button class="sub-page-header-btn" type="button" aria-label="メニューを開く">
+            <img src="img/logo/logo2.svg" alt="みんなの食堂">
+        </button>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about-page.html">食堂について</a></li>
+                <li><a href="menu-page.html">今週のごはん</a></li>
+                <li><a href="news-page.html">お知らせ</a></li>
+                <li><a href="qa-page.html">よくある質問</a></li>
+                <li><a href="about-page.html#access">アクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <div class="mask"></div>
+
+        <button class="toggle-btn" type="button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="news-list-page container">
+            <div class="section-heading news-heading">
+                <h1 class="section-title">お知らせ</h1>
+                <p class="section-title-sub font-en">- News -</p>
+            </div>
+            <div class="news-item">
+                <img src="img/news/news2.png" alt="">
+                <div class="news-item-box">
+                    <h2 class="news-title">今週のメニュー更新</h2>
+                    <p class="date">
+                        <time datetime="2026-03-27">2026.03.27</time>
+                    </p>
+                    <div class="news-text">
+                        <p>
+                            今週のメニューを更新しました。
+                        </p>
+                        <p>
+                            春休みに合わせ、お子さまに人気のメニューをご用意しています。旬の食材を取り入れながら、毎日違った献立を楽しんでいただけるよう心を込めて調理しています。
+                        </p>
+                        <p>
+                            最新の献立はメニューページからご確認いただけます。
+                        </p>
+                    </div>
+                    <a class="news-item-btn btn" href="news-page.html">
+                        <span>お知らせ一覧へ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <a href="#">
+                <img src="img/logo/logo2.svg" alt="みんなの食堂">
+            </a>
+            <a class="page-top" href="#">
+                <span class="font-en">page top</span>
+            </a>
+        </div>
+        <p>©2026 みんなの食堂</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

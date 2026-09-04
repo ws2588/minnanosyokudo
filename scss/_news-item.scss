@@ -1,0 +1,55 @@
+@use'mixin' as m;
+
+.news-list-page {
+    margin-top: 140px;
+    margin-inline: auto;
+
+    @include m.tab {
+        margin-top: 100px;
+    }
+}
+
+.news-item {
+    margin-top: 32px;
+
+    img {
+        border-radius: 40px;
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .news-item-box {
+        margin-top: 40px;
+
+        .news-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .news-text {
+            font-size: 14px;
+            width: 100%;
+            margin-top: 32px;
+
+            p {
+                margin-bottom: 24px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 56px;
+            }
+        }
+
+    }
+}
+
+.news-item-btn {
+    &::after {
+        right: 95px;
+    }
+}

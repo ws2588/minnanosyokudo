@@ -1,0 +1,16 @@
+{
+  "liveSassCompile.settings.includeItems": [
+    "/scss/style.scss"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/img/**"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true
+}

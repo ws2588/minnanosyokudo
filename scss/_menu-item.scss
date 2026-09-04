@@ -1,0 +1,114 @@
+@use'mixin' as m;
+
+.menu-item {
+    margin-top: 180px;
+    display: flex;
+    gap: 7%;
+    margin-inline: auto;
+
+    img {
+        width: 53%;
+        border-radius: 40px;
+    }
+
+    @include m.tab {
+        margin-top: 120px;
+        padding-inline: 24px;
+    }
+
+    @include m.md {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.menu-item-text {
+    width: 40%;
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .menu-item-info {
+        margin-top: 48px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 8%;
+
+            li {
+                margin-top: 16px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .menu-item-allergy {
+        margin-top: 32px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 16px;
+            padding-left: 4%;
+        }
+    }
+
+    @include m.md {
+        width: 100%;
+        margin-top: 40px;
+
+        .menu-item-info {
+            margin-top: 24px;
+        }
+
+        .menu-item-info ul {
+            padding-left: 6%;
+        }
+    }
+
+    @include m.xs {
+        h1 {
+            font-size: 24px;
+            display: block;
+            text-align: center;
+        }
+
+        .menu-item-info {
+            margin-top: 32px;
+        }
+
+        .menu-item-info h2 {
+            font-size: 18px;
+        }
+
+        .menu-item-info li {
+            font-size: 14px;
+        }
+    }
+
+    .menu-item-allergy h2 {
+            font-size: 18px;
+        }
+
+    .menu-item-allergy p {
+            font-size: 14px;
+        }
+    }
+
+.menu-item-btn {
+    &::after {
+        right: 95px;
+    }
+}

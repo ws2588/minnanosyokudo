@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>食堂について</title>
+    <meta name="description" content="子ども食堂">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.svg"> <!-- favicon用のsvg画像を用意しておく(背景透過) -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="logo-pc" src="img/logo/logo1.svg" alt="みんなの食堂">
+            <img class="logo-tb" src="img/logo/logo2.svg" alt="みんなの食堂">
+        </a>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="about-page.html">食堂について</a></li>
+                <li><a href="menu-page.html">今週のごはん</a></li>
+                <li><a href="news-page.html">お知らせ</a></li>
+                <li><a href="qa-page.html">よくある質問</a></li>
+                <li><a href="about-page.html#access">アクセス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <div class="mask"></div>
+
+        <button class="toggle-btn" type="button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="about-top page-hero">
+            <img class="about-top-img1 page-hero-img1" src="img/about/about-top1.png" alt="">
+            <div class="about-top-box page-hero-box">
+                <div class="about-top-box-contents page-hero-box-contents">
+                    <h1 class="page-hero-title">ご飯を囲んで緩やかに<br class="br-pc"><br class="br-xs"><span
+                            class="page-hero-subtitle">つながる場所</span></h1>
+                    <div class="page-hero-lead">
+                        <p>みんなの食堂は子どもから大人まで誰でも気軽に立ち寄れる場所です。</p>
+                        <p>ご飯を食べたり、宿題をしたり、誰かと少しお話したり近すぎないけれど、安心して過ごせる場所を目指しています。</p>
+                    </div>
+                </div>
+                <img class="about-top-img2 page-hero-img2" src="img/about/about-top2.png" alt="">
+            </div>
+        </section>
+
+        <section class="about-our-moments container fadein">
+            <div class="section-heading about-heading">
+                <h2 class="section-title">食堂での過ごし方</h2>
+                <p class="section-title-sub font-en">- Our Moments -</p>
+            </div>
+            <ul class="our-moments-list">
+                <li>
+                    <img src="img/about/moments/moments1.png" alt="">
+                    <div class="our-moments-list-text">
+                        <h3>食べる</h3>
+                        <p>ご飯を囲みながらゆっくり過ごせる時間。
+                            放課後に立ち寄れる地域の食堂として開いています。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/about/moments/moments2.png" alt="">
+                    <div class="our-moments-list-text">
+                        <h3>過ごす</h3>
+                        <p>一人で宿題をしたり、遊んだり、本を読んだり。
+                            それぞれのペースで自由に過ごせる場所です。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/about/moments/moments3.png" alt="">
+                    <div class="our-moments-list-text">
+                        <h3>つながる</h3>
+                        <p>この場所をきっかけに自然な交流が生まれ、安心して過ごせる居場所づくりを目指しています。</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about-information fadein">
+            <div class="section-heading about-heading">
+                <h2 class="section-title">ご利用案内</h2>
+                <p class="section-title-sub font-en">- Information -</p>
+            </div>
+            <ul class="information-list">
+                <li>
+                    <img src="img/about/information/information-icon1.svg" alt="">
+                    <div class="information-list-text">
+                        <h3>利用できる方</h3>
+                        <p>小学生〜大学生、地域のみなさんもご利用いただけます。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/about/information/information-icon2.svg" alt="">
+                    <div class="information-list-text">
+                        <h3>食事料金</h3>
+                        <dl class="price-list">
+                            <div class="price-list-item">
+                                <dt>中学生以下：</dt>
+                                <dd>無料</dd>
+                            </div>
+                            <div class="price-list-item">
+                                <dt>大学生以下：</dt>
+                                <dd>３００円</dd>
+                            </div>
+                            <div class="price-list-item">
+                                <dt>大人：</dt>
+                                <dd>８００円</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/about/information/information-icon3.svg" alt="">
+                    <div class="information-list-text">
+                        <h3>スペース利用</h3>
+                        <p>スペースの利用は無料です。宿題や自習にもご利用いただけます。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/about/information/information-icon4.svg" alt="">
+                    <div class="information-list-text">
+                        <h3>営業時間</h3>
+                        <dl class="hours-list">
+                            <div class="hours-list-item">
+                                <dt>平日：</dt>
+                                <dd>１５時〜２０時</dd>
+                            </div>
+                        </dl>
+                        <p>休日イベントはお知らせをご覧ください</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="information-last-text">はじめての方も安心してご利用いただけるよう、スタッフがお待ちしています。</p>
+        </section>
+
+        <section class="about-location container" id="access">
+            <div class="section-heading about-heading">
+                <h2 class="section-title">アクセス・店舗案内</h2>
+                <p class="section-title-sub font-en">- Location -</p>
+            </div>
+            <ul class="location-list">
+                <li class="location-list-item">
+                    <iframe class="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.72993438032!2d135.49109067559033!3d34.71199107291562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6838bd670f7%3A0xc25ea80c682226b8!2z44CSNTMxLTAwNzEg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65Lit5rSl77yT5LiB55uu77yR77yS4oiS77yX!5e0!3m2!1sja!2sjp!4v1782033741622!5m2!1sja!2sjp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="location-list-item-text">
+                        <h3 class="shop-name">みんなの食堂　中津</h3>
+                        <dl>
+                            <dt>住所</dt>
+                            <dd>大阪府大阪市北区中津XXX</dd>
+                            <dt>アクセス</dt>
+                            <dd>
+                                <ul>
+                                    <li>阪急「中津駅」より徒歩4分</li>
+                                    <li>Osaka Metro御堂筋線「中津駅」より徒歩7分</li>
+                                    <li>JR「大阪駅」より徒歩15分</li>
+                                </ul>
+                            </dd>
+                            <dt>営業時間</dt>
+                            <dd>
+                                <p>月〜土　15:00〜20:00</p>
+                                <p>※不定休あり。お知らせをご確認ください。</p>
+                            </dd>
+                            <dt>特徴</dt>
+                            <dd>学校帰りに立ち寄れる、学生利用の多い店舗です。自習や食事など自由に過ごせます。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="location-list-item">
+                    <iframe class="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.72993438032!2d135.49109067559033!3d34.71199107291562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e5cfb1dfc1a5%3A0x619c009d9db5b36e!2z44CSNTMyLTAwMjQg5aSn6Ziq5bqc5aSn6Ziq5biC5reA5bed5Yy65Y2B5LiJ5pys55S677yS5LiB55uu77yY4oiS77yR77yRIOOBiOOCiw!5e0!3m2!1sja!2sjp!4v1782033795759!5m2!1sja!2sjp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="location-list-item-text">
+                        <h3 class="shop-name">みんなの食堂　十三</h3>
+                        <dl>
+                            <dt>住所</dt>
+                            <dd>大阪府大阪市淀川区十三本町XXX</dd>
+                            <dt>アクセス</dt>
+                            <dd>
+                                <ul>
+                                    <li>阪急「十三駅」西口より徒歩5分</li>
+                                    <li>十三商店街より徒歩2分</li>
+                                    <li>阪急「大阪梅田駅」より電車で約6分</li>
+                                </ul>
+                            </dd>
+                            <dt>営業時間</dt>
+                            <dd>
+                                <p>月〜土　15:00〜20:00</p>
+                                <p>※不定休あり。お知らせをご確認ください。</p>
+                            </dd>
+                            <dt>特徴</dt>
+                            <dd>親子イベントや交流会を開催しています。地域の方が気軽に集える店舗です。</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <div class="about-bottom fadein">
+            <div class="about-bottom-inner">
+                <div class="about-bottom-text">
+                    <p>誰かと少しお話をしたり、静かに過ごしたり。
+                        過ごし方は人それぞれです。
+                        ご飯を食べることをきっかけに、誰かと少しつながれる。
+                    </p>
+                    <p>
+                        みんなの食堂が、子どもたちや地域のみなさんにとって安心できる居場所のひとつになれたら嬉しいです。
+                    </p>
+                </div>
+                <img class="about-bottom-img" src="img/about/about-bottom.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <a href="#">
+                <img src="img/logo/logo2.svg" alt="みんなの食堂">
+            </a>
+            <a class="page-top" href="#">
+                <span class="font-en">page top</span>
+            </a>
+        </div>
+        <p>©2026 みんなの食堂</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@use'mixin' as m;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #363635;
+    background: #FEF9E5;
+    font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+.font-en {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+a {
+    text-decoration: none;
+    color: #363635;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+
+    @include m.tab {
+        padding-inline: 24px;
+    }
+
+    @include m.sp {
+        padding-inline: 16px;
+    }
+}
+
+.section-heading {
+    display: inline-block;
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @include m.tab {
+        display: block;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    @include m.sp {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
+
+.btn {
+    position: relative;
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+
+    span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 70px;
+        transform: translateY(-50%);
+        transition: transform .7s ease;
+        background: #FED24B;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        z-index: 1;
+    }
+
+    &:hover::after {
+        transform: translateY(-50%) translateX(64px);
+    }
+
+    @include m.sp {
+        span {
+            font-size: 14px;
+        }
+
+        &::after {
+            right: 60px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

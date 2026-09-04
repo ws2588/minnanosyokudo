@@ -1,0 +1,27 @@
+@use'mixin' as m;
+
+.qa-page {
+    margin-top: 140px;
+    margin-inline: auto;
+    max-width: 754px;
+
+    @include m.tab {
+        padding-inline: 16px;
+        margin-top: 120px;
+    }
+}
+
+.qa-heading {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.qa-page-list li {
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #FFF1B9;
+    }
+}
