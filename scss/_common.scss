@@ -15,7 +15,7 @@ body {
 
 html,
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -24,6 +24,10 @@ main {
 
 .font-en {
     font-family: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+button {
+    color: #363635;
 }
 
 a {

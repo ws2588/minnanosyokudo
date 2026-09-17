@@ -25,6 +25,10 @@ main {
   font-family: "Fraunces", Georgia, "Times New Roman", serif;
 }
 
+button {
+  color: #363635;
+}
+
 a {
   text-decoration: none;
   color: #363635;
